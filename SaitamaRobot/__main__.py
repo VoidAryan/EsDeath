@@ -52,8 +52,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*General in command! {}, myself {}!* 
-*An Anime themed group management bot based on [Akame ga Kill](https://anilist.co/anime/20613)!!
+*Hello! {}, myself {}!* 
+*An Anime Group management Bot Made With Love By [TArun].(https://telegra.ph/file/e1fadd45467a6dc6b34f2.jpg)!!
 
 • *Uptime:* `{}`
 """
@@ -63,13 +63,13 @@ HELP_STRINGS = """
 *AI Chatbot*, *Anime*, *Music*, *Notes*, *Filters*, *NSFW* *and more!*
 
 🎛 *All commands can either be used with* `/` *or* `!`.
-🎛 *Reach out for support:* @EsDeathSupport 
+🎛 *Reach out for support:* @FinalRikkaUpdate 
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-KURISU_IMG = "https://telegra.ph/file/9a75aa001586ef41ff5b9.png"
-KURISUIMGSTART = "https://telegra.ph/file/41fe8e7f0aee49cbb1261.gif"
+KURISU_IMG = "https://te.legra.ph/file/cfc57e6203e2f8585b53f.png"
+KURISUIMGSTART = "https://telegra.ph/file/39aee1ec1852d650ef25e.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer of the Base code, Paul
@@ -537,7 +537,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am now online!](https://telegra.ph/file/41fe8e7f0aee49cbb1261.gif)", parse_mode=ParseMode.MARKDOWN)
+            dispatcher.bot.sendMessage(f"@RikkaFinalUpdate", "[I am now online!](https://telegra.ph/file/e1fadd45467a6dc6b34f2.jpg)", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
