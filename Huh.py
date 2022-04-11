@@ -68,5 +68,5 @@ if ENABLE_HAREM:
                     await borg.send_message(Config.PRIVATE_GROUP_BOT_API_ID, "A Waifu Appeared By Was Unable To Reverse Search Image! Sorry :(")
                     return
                 guess = guessp.replace("Results for", "").replace(" ", "")
-                await borg.send_message(event.chat_id, f"/protecc {guess}")
+                await borg.send_message(event.chat_id, f"/protecc   {guess}")
                 await borg.send_message(Config.PRIVATE_GROUP_BOT_API_ID, f"#Waifu_Moment \nGuessed Waifu : {guess} \nChat ID : {event.chat_id} \nPowered By @feelded")
